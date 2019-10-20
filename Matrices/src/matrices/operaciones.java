@@ -53,9 +53,10 @@ public class operaciones {
     /*For de recorrido de la matris */
     for( int i = 0; i < filas; i++ ){
       for(int j = 0; j < columnas; j++){
-        System.out.println( matris[ i ][ j ] );
+        System.out.print( matris[ i ][ j ] );
       }
-    }
+      System.out.print("\n");
+    }//for
     
   }
   
