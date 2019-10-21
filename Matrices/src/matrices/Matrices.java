@@ -46,6 +46,7 @@ public class Matrices {
     }
     //asignamos la nueva matriz en la mtrizObj utilizando el metodo set
     matrizObj.setMatris(matriz);
+    matrizObj.setB(matriz);
     //se imprime un separador
     System.out.println( "------------------------------------------"  );
     matrizObj.solucion();

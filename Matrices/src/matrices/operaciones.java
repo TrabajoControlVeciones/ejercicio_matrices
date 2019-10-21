@@ -8,6 +8,7 @@ public class operaciones {
   private int columnas = 0;
   
   int matris[ ][ ] = new int[ filas ][ columnas ];
+   int b[ ][ ] = new int[ filas ][ columnas ];
   
   //constructor vacio
   public operaciones(){ 
@@ -50,13 +51,20 @@ public class operaciones {
   
   //metodo de solucion 
   void solucion(){
+    int l = 0;
     /*For de recorrido de la matris */
-    for( int i = 0; i < filas; i++ ){
-      for(int j = 0; j < columnas; j++){
-        System.out.print( matris[ i ][ j ] );
-      }
-      System.out.print("\n");
-    }//for
+    for (int y = 0; y < (filas - 1); y++){
+      for( int i = 1; i < filas; i++ ){
+        for(int j = 0; j < columnas; j++){
+         
+          System.out.print(( (matris[ i ][ l ] * -1) * matris[l][j] ) + matris[i][j] + ",");
+        }
+        setMatris(b);
+        System.out.print("\n");
+      }//for
+      l++;
+    }
+    
     
   }
   
